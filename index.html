@@ -27,7 +27,7 @@
 
     .subtitle {
       font-size: 1.3rem;
-      color: #facc15; text-shadow: 0 0 5px #facc15;
+      color: #94a3b8;
       margin-top: 10px;
     }
 
@@ -105,13 +105,23 @@
         transform: translateY(0);
       }
     }
-  </style>
+  
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+</style>
 </head>
 <body>
   <header>
-    <div style="display: flex; justify-content: center; align-items: center; gap: 10px;"><h1>Dr. Todd A. Nitkin</h1>
-<img src="https://dummyimage.com/60x60/0a0a0a/ffffff&text=TN" alt="TN Logo" style="margin-left: 20px; border-radius: 50%; border: 2px solid #facc15;">
-</div>
+    <h1>Dr. Todd A. Nitkin</h1>
     <p class="subtitle">Data Scientist | Python, Power BI, and AI/ML</p>
   </header>
 
@@ -123,7 +133,7 @@
     <a href="Todd_Nitkin_CL_4_2025.pdf">Cover Letter</a>
   </nav>
 
-  <div class="section">
+  <div class="section fade-in">
     <h2>About Me</h2>
     <p>I'm a bold and innovative Data Scientist with expertise in Python, Power BI, SQL, and state-of-the-art AI/ML tools including
 LLMs, PyTorch, and NLP. I lead data science initiatives at IntelliDyne and co-founded Inspire Ethiopia. My work is focused on
@@ -131,7 +141,7 @@ solving complex challenges through predictive modeling, dynamic dashboards, and 
 nonprofits, and commercial business sectors.</p>
   </div>
 
-  <div class="section">
+  <div class="section fade-in">
     <h2>Core Skills</h2>
     <ul>
       <li>Python, SQL, Power BI, Dash, ArcGIS</li>
@@ -142,7 +152,7 @@ nonprofits, and commercial business sectors.</p>
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section fade-in">
     <h2>Recent Projects</h2>
     <ul>
   <li><strong>Geospatial Analytics Tool:</strong> Interactive Dash app with ArcGIS and Power BI visualizing soil/geological data.</li>
@@ -157,5 +167,18 @@ nonprofits, and commercial business sectors.</p>
     <a class="button" href="projects.html">📁 Projects</a>
     <a class="button" href="links.html">🌐 LinkTree</a>
   </div>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    faders.forEach(fader => observer.observe(fader));
+  </script>
 </body>
 </html>
