@@ -1,1 +1,87 @@
-<html><head><title>Projects</title></head><body><h1>Projects</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Todd A. Nitkin</title>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 40px 0;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #38bdf8;
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #facc15;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Featured Projects</h1>
+  <div class="projects">
+    <div class="card">
+      <h2>Geospatial Analytics Tool</h2>
+      <p>Interactive Dash app using ArcGIS, Python, and Power BI to visualize and analyze environmental datasets.</p>
+      <a href="#">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>LLM-Powered Reporting</h2>
+      <p>Natural Language Processing tools that automatically generate written narratives from structured data inputs.</p>
+      <a href="#">View Notebook</a>
+    </div>
+    <div class="card">
+      <h2>Global BI System</h2>
+      <p>Business Intelligence platform deployed in 58 countries with 179 programs, integrating diverse global data.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="card">
+      <h2>Inspire Ethiopia Dashboards</h2>
+      <p>ETL pipelines and dashboards for educational access and outcomes, used to drive fundraising and impact.</p>
+      <a href="#">Visit Project</a>
+    </div>
+  </div>
+</body>
+</html>
