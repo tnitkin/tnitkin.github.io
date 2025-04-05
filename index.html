@@ -124,6 +124,15 @@
 </style>
 </head>
 <body>
+
+  <div class="buttons">
+    <a class="button" href="index.html">🏠 Home</a>
+    <a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 Resume</a>
+    <a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 Cover Letter</a>
+    <a class="button" href="links.html#research">📚 Published Research</a>
+    <a class="button" href="links.html#contact">📧 Contact Me</a>
+  </div>
+
   <header>
     <h1>Dr. Todd A. Nitkin</h1>
     <p class="subtitle">Data Scientist | Python, Power BI, and AI/ML</p>
@@ -165,12 +174,7 @@ nonprofits, and commercial business sectors.</p>
 </ul>
   </div>
 
-  <div class="buttons">
-    <a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 Resume</a>
-    <a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 Cover Letter</a>
-    <a class="button" href="projects.html">📁 Projects</a>
-    <a class="button" href="links.html">🌐 LinkTree</a>
-  </div>
+  
 
   <script>
     const sections = document.querySelectorAll('.fade-in');
@@ -184,5 +188,22 @@ nonprofits, and commercial business sectors.</p>
 
     sections.forEach(section => observer.observe(section));
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.25 });
+
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+
 </body>
 </html>
