@@ -3,42 +3,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Todd A. Nitkin | Portfolio</title>
+  <title>Dr. Todd A. Nitkin | Data Scientist</title>
   <style>
     body {
-      background-color: #f9fafb;
-      color: #1f2937;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
     }
 
     header {
+      background-color: #1e293b;
       text-align: center;
-      padding: 40px 0;
+      padding: 60px 20px;
+      animation: fadeIn 2s ease-in-out;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0;
+      font-size: 3rem;
+      margin: 0;
     }
 
-    p.subtitle {
-      font-size: 1.2rem;
-      color: #4b5563;
+    .subtitle {
+      font-size: 1.3rem;
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #0f172a;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
 
     .section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeInUp 1s ease-out;
     }
 
     h2 {
-      color: #2563eb;
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 5px;
     }
 
     ul {
-      line-height: 1.6;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "▹ ";
+      color: #38bdf8;
     }
 
     .buttons {
@@ -46,19 +72,38 @@
       justify-content: center;
       gap: 20px;
       margin-top: 30px;
+      flex-wrap: wrap;
     }
 
     a.button {
-      padding: 12px 20px;
       background-color: #2563eb;
       color: white;
+      padding: 14px 22px;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
     }
 
     a.button:hover {
       background-color: #1d4ed8;
+      transform: translateY(-3px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -68,13 +113,20 @@
     <p class="subtitle">Data Scientist | Python, Power BI, and AI/ML</p>
   </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="links.html">Links</a>
+    <a href="Todd_Nitkin_CV_4_2025.pdf">Resume</a>
+    <a href="Todd_Nitkin_CL_4_2025.pdf">Cover Letter</a>
+  </nav>
+
   <div class="section">
     <h2>About Me</h2>
     <p>
-      I'm a results-driven Data Scientist with deep experience in Python, Power BI, SQL, and cutting-edge AI/ML techniques
-      including LLMs, PyTorch, and NLP. My work spans corporate, nonprofit, and healthcare sectors, with a special focus
-      on geospatial analysis, predictive modeling, and business intelligence dashboards. I currently lead data science efforts
-      at IntelliDyne and co-founded Inspire Ethiopia to support data-informed education initiatives.
+      I'm a bold and innovative Data Scientist with expertise in Python, Power BI, SQL, and state-of-the-art AI/ML tools including
+      LLMs, PyTorch, and NLP. I lead data science initiatives at IntelliDyne and co-founded Inspire Ethiopia. My work is focused on
+      solving complex challenges through predictive modeling, dynamic dashboards, and data storytelling across tech, healthcare, and nonprofits.
     </p>
   </div>
 
@@ -92,15 +144,17 @@
   <div class="section">
     <h2>Recent Projects</h2>
     <ul>
-      <li><strong>Geospatial Analytics Tool:</strong> Built an interactive Dash app integrating ArcGIS and Power BI to visualize soil and geology data.</li>
-      <li><strong>LLM-Powered Reporting:</strong> Developed NLP tools to automate narrative generation from raw datasets.</li>
-      <li><strong>Program Information System:</strong> Designed a global BI dashboard platform used in 58 countries with 179 programs.</li>
+      <li><strong>Geospatial Analytics Tool:</strong> Interactive Dash app with ArcGIS and Power BI visualizing soil/geological data.</li>
+      <li><strong>LLM-Powered Reporting:</strong> Automated narratives using NLP from raw datasets.</li>
+      <li><strong>Global BI System:</strong> Platform used in 58 countries for data tracking and decision-making.</li>
     </ul>
   </div>
 
   <div class="buttons">
-    <a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 View Resume</a>
-    <a class="button" href="projects.html">📁 View Projects</a>
-  <a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 View Cover Letter</a></div>
+    <a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 Resume</a>
+    <a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 Cover Letter</a>
+    <a class="button" href="projects.html">📁 Projects</a>
+    <a class="button" href="links.html">🌐 LinkTree</a>
+  </div>
 </body>
 </html>
