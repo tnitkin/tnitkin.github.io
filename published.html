@@ -21,8 +21,17 @@
     }
     p {
       font-size: 1rem;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       text-align: center;
+    }
+    .intro {
+      text-align: left;
+      font-size: 0.95rem;
+      margin: 30px 0;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
     }
     .card {
       display: block;
@@ -33,7 +42,7 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
     .card:hover {
       background-color: #2563eb;
@@ -44,6 +53,17 @@
 <body>
   <h1>Published Research</h1>
   <p>I am actively contributing to the data science and public health space through quantitative and qualitative research and applied projects, utilizing KOBO Toolbox, Python, PowerBI, and LLMs.</p>
+  <div class="intro">
+    <p>For each of the research projects listed, I was responsible for:</p>
+    <ul>
+      <li>Designing the study, sampling frame, indicators, and questionnaires</li>
+      <li>Planning the methodology, sample sizes, and data collection protocols</li>
+      <li>Building KOBO Toolbox forms and training data collection teams</li>
+      <li>Data cleaning, analysis (Python, Power BI), and reporting</li>
+      <li>Publishing results and creating all data visualizations and dashboards</li>
+    </ul>
+    <p><strong>My published guide, <em>LQAS Guide to Parallel Sampling</em>, is now considered the global industry standard, widely adopted by major INGOs. I am recognized as a global expert in this quantitative methodology.</strong></p>
+  </div>
   <a href="#" class="card" target="_blank">LQAS Guide to Parallel Sampling – Industry standard adopted globally</a>
   <a href="#" class="card" target="_blank">Epidemiological Survey Design using Python and STATA</a>
   <a href="#" class="card" target="_blank">Predictive Analytics in Post-Conflict Zones (Power BI Report)</a>
