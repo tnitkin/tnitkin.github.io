@@ -1,208 +1,53 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>Dr. Todd A. Nitkin | Data Scientist</title>
-<style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f172a;
-      color: #f1f5f9;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1e293b;
-      text-align: center;
-      padding: 60px 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    .subtitle {
-      font-size: 1.3rem;
-      color: #94a3b8;
-      margin-top: 10px;
-    }
-
-    nav {
-      background-color: #0f172a;
-      padding: 10px 20px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      animation: fadeInUp 1s ease-out;
-    }
-
-    h2 {
-      color: #38bdf8;
-      border-bottom: 2px solid #38bdf8;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li::before {
-      content: "▹ ";
-      color: #38bdf8;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-      flex-wrap: wrap;
-    }
-
-    a.button {
+  <meta charset="UTF-8">
+  <title>Todd A. Nitkin Portfolio</title>
+  <style>
+    body { background-color: #0f172a; color: #f1f5f9; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; }
+    h1 { font-size: 2.5rem; }
+    .subtitle { color: #facc15; font-weight: 500; margin-top: 4px; }
+    .buttons a {
       background-color: #2563eb;
       color: white;
-      padding: 14px 22px;
       text-decoration: none;
+      padding: 10px 16px;
+      margin: 4px;
       border-radius: 8px;
       font-weight: bold;
-      transition: background-color 0.3s, transform 0.3s;
+      display: inline-block;
     }
-
-    a.button:hover {
+    .buttons a:hover {
       background-color: #1d4ed8;
-      transform: translateY(-3px);
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  
-  .fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-
-  .fade-in.visible {
-    opacity: 1;
-    transform: none;
-    background-color: rgba(56, 189, 248, 0.05);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-  }
-
-</style>
+  </style>
 </head>
 <body>
+  
 <header style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
-<div style="display: flex; align-items: center; gap: 20px;">
-<img alt="TN Logo" src="tn-logo.png" style="height: 60px; margin-right: 20px;"/>
-<div style="text-align: center;">
-<h1>Dr. Todd A. Nitkin</h1>
-<p class="subtitle">Data Scientist | Python, Power BI, and AI/ML</p>
-</div>
-</div>
-<div class="buttons" style="justify-content: center; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px;">
-<a class="button" href="index.html">🏠 Home</a>
-<a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 Resume</a>
-<a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 Cover Letter</a>
-<a class="button" href="published.html">📚 Published Research</a>
-<a class="button" href="contact.html">📧 Contact Me</a>
-<a class="button" href="linkedin.html">🔗 LinkedIn</a>
-</div>
+  <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 15px;">
+    <img src="tn-logo.png" alt="TN Logo" style="height: 70px; margin-right: 25px; margin-left: -30px;">
+    <div style="text-align: left;">
+      <h1>Dr. Todd A. Nitkin</h1>
+      <p class="subtitle">Data Scientist | Python, Power BI, and AI/ML</p>
+    </div>
+  </div>
+  
+  <div class="buttons" style="justify-content: center; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px;">
+    <a class="button" href="index.html">🏠 Home</a>
+    <a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 Resume</a>
+    <a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 Cover Letter</a>
+    <a class="button" href="published.html">📚 Published Research</a>
+    <a class="button" href="contact.html">📧 Contact Me</a>
+    <a class="button" href="linkedin.html">🔗 LinkedIn</a>
+  </div>
+
 </header>
 
-<a class="button" href="index.html">🏠 Home</a>
-<a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 Resume</a>
-<a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 Cover Letter</a>
-<a class="button" href="links.html#research">📚 Published Research</a>
-<a class="button" href="links.html#contact">📧 Contact Me</a>
-
-
-<a href="Todd_Nitkin_CV_4_2025.pdf">Resume</a>
-<a href="Todd_Nitkin_CL_4_2025.pdf">Cover Letter</a>
-<div class="section fade-in">
-<h2>About Me</h2>
-<p>I'm a bold and innovative Data Scientist with expertise in Python, Power BI, SQL, and state-of-the-art AI/ML tools including
-LLMs, PyTorch, and NLP. I lead data science initiatives at IntelliDyne and co-founded Inspire Ethiopia. My work is focused on
-solving complex challenges through predictive modeling, dynamic dashboards, and data storytelling across tech, healthcare,
-nonprofits, and commercial business sectors.</p>
-</div>
-<div class="section fade-in">
-<h2>Core Skills</h2>
-<ul>
-<li>Python, SQL, Power BI, Dash, ArcGIS</li>
-<li>LLMs, NLP, PyTorch, TensorFlow, XGBoost</li>
-<li>ETL, Data Cleansing, Statistical Modeling</li>
-<li>Flask Apps, Jupyter Workflows, GitHub</li>
-<li>Geospatial &amp; Claims Data Analysis</li>
-</ul>
-</div>
-<div class="section fade-in">
-<h2>Recent Projects</h2>
-<ul>
-<li><strong>Geospatial Analytics Tool:</strong> Interactive Dash app with ArcGIS and Power BI visualizing soil/geological data.</li>
-<li><strong>LLM-Powered Reporting:</strong> Automated narratives using NLP from raw datasets.</li>
-<li><strong>Global BI System:</strong> Platform used in 58 countries with 179 different programs, aggregating diverse data types for decision-making and visualization.</li>
-</ul>
-</div>
-<script>
-    const sections = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.15 });
-
-    sections.forEach(section => observer.observe(section));
-  </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const sections = document.querySelectorAll(".fade-in");
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.25 });
-
-      sections.forEach(section => observer.observe(section));
-    });
-  </script>
+  <div class="section fade-in">
+    <h2>About Me</h2>
+    <p>This is a placeholder. You'll upload your full content again next.</p>
+  </div>
 </body>
 </html>
