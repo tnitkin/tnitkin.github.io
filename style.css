@@ -33,7 +33,7 @@ ul li {
     margin-bottom: 10px;
 }
 .card {
-    background-color: #263155; /* brighter than before */
+    background-color: #2e3b66; /* one step brighter than previous (#263155) */
     border-radius: 8px;
     padding: 20px;
     margin: 16px auto;
