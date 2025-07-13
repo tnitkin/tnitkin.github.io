@@ -6,17 +6,19 @@ body {
     margin: 0;
     padding: 40px;
 }
-h1 {
+h1.title {
     color: #00bfff;
     font-size: 2.5em;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-h1 img {
+h1.title img {
     height: 50px;
+    vertical-align: middle;
 }
 p, ul {
     max-width: 800px;
