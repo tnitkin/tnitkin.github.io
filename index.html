@@ -21,7 +21,25 @@
     .buttons a:hover {
       background-color: #1d4ed8;
     }
-  </style>
+  
+    .section {
+        padding: 20px;
+        margin: 40px auto;
+        max-width: 900px;
+        transition: background-color 0.3s;
+    }
+    .section:hover {
+        background-color: #1e293b;
+        border-radius: 8px;
+    }
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    </style>
 </head>
 <body>
   
@@ -36,8 +54,8 @@
   
   <div class="buttons" style="justify-content: center; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px;">
     <a class="button" href="index.html">🏠 Home</a>
-    <a class="button" href="resume.html">📄 Resume</a>
-    <a class="button" href="coverletter.html">📬 Cover Letter</a>
+    <a class="button" href="Todd_Nitkin_CV_4_2025.pdf">📄 Resume</a>
+    <a class="button" href="Todd_Nitkin_CL_4_2025.pdf">📬 Cover Letter</a>
     <a class="button" href="published.html">📚 Published Research</a>
     <a class="button" href="contact.html">📧 Contact Me</a>
     <a class="button" href="linkedin.html">🔗 LinkedIn</a>
