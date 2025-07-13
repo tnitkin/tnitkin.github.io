@@ -1,8 +1,31 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #fff;
+    color: #000;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+ol {
+    padding-left: 20px;
+}
+ol li {
+    margin-bottom: 12px;
+}
+a {
+    color: #003399;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 20px 10px;
+    margin: 20px 10px 0 0;
     background-color: #004080;
     color: white;
     text-decoration: none;
