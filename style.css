@@ -1,11 +1,11 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0c1220;
+    background-color: #1a2238;  /* Updated background */
     color: #ffffff;
     margin: 0;
     padding: 40px;
 }
+
 h1.title {
     color: #00bfff;
     font-size: 2.5em;
@@ -16,24 +16,30 @@ h1.title {
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
 h1.title img {
     height: 50px;
     vertical-align: middle;
 }
+
 p, ul {
     max-width: 800px;
     margin: 20px auto;
     padding-left: 40px;
 }
+
 ul {
     padding-left: 60px;
 }
+
 ul li {
     color: #ffffff;
     margin-bottom: 10px;
 }
+
+/* Shared card style for About, Skills, Research, etc. */
 .card {
-    background-color: #415c9c;
+    background-color: #2a2f45;  /* Default box */
     border-radius: 8px;
     padding: 20px;
     margin: 16px auto;
@@ -42,18 +48,22 @@ ul li {
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     transition: background-color 0.3s ease;
 }
+
 .card:hover {
-    background-color: #00bfff; /* final homepage hover blue */
+    background-color: #3c4564;  /* Hover color */
 }
+
 .card a {
     color: #ffffff;
     font-size: 1.1em;
     text-decoration: none;
     font-weight: bold;
 }
+
 .card a:hover {
     text-decoration: underline;
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -64,30 +74,31 @@ ul li {
     border-radius: 5px;
     font-weight: bold;
 }
+
 .button:hover {
     background-color: #003060;
 }
+
 .nav-buttons {
     text-align: center;
     margin-top: 40px;
 }
 
+/* PDF render box for resume and CL */
 .doc-box {
-  padding: 20px;
-  background-color: #1e293b;
-  text-align: center;
-  border-radius: 12px;
-  max-width: 900px;   /* Controls overall width */
-  margin: 40px auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    background-color: #2a2f45;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .doc-box img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
-
-
