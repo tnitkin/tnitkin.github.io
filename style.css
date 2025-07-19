@@ -102,3 +102,28 @@ ul li {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
+.section {
+  background-color: #101c35;  /* Slightly lighter than background */
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  max-width: 900px;
+}
+
+.section:hover {
+  background-color: #1e293b;  /* Hover color – slightly brighter */
+  transform: scale(1.015);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
