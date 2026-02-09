@@ -2,175 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Resume - Todd A. Nitkin</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Resume - Dr. Todd A. Nitkin</title>
   <style>
     body {
       background-color: #0f172a;
-      color: #f1f5f9;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      padding: 20px;
-    }
-    
-    h1 {
-      text-align: center;
-      color: #facc15;
-      margin-bottom: 10px;
-    }
-    
-    .subtitle {
-      text-align: center;
       color: #f1f5f9;
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
-    
-    .buttons {
+      margin: 0;
+      padding: 50px 0;
       text-align: center;
-      margin: 30px 0;
     }
-    
-    .buttons a {
-      background-color: #004080;
-      color: white;
-      text-decoration: none;
-      padding: 10px 16px;
-      margin: 4px;
-      border-radius: 8px;
-      font-weight: bold;
-      display: inline-block;
-      transition: all 0.3s ease;
-    }
-    
-    .buttons a:hover {
-      background-color: #1035AC;
-      transform: translateY(-2px);
-    }
-    
-    .cv-section {
+    .image-container {
       background-color: #1e293b;
-      padding: 30px;
-      margin: 30px auto;
-      border-radius: 12px;
+      padding: 20px;
       max-width: 1000px;
+      margin: auto;
+      border-radius: 10px;
     }
-    
-    .cv-section h2 {
-      color: #facc15;
-      margin-bottom: 15px;
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .nav-buttons {
       text-align: center;
+      margin-top: 30px;
     }
-    
-    .cv-section p {
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      font-weight: bold;
+      color: white;
+      background-color: #004080;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #00bfff;
+    }
+    .tab-buttons {
       text-align: center;
       margin-bottom: 20px;
-      line-height: 1.6;
     }
-    
-    .download-btn {
-      background-color: #facc15;
-      color: #0f172a;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+    .tab-btn {
       display: inline-block;
-      margin: 10px;
+      padding: 12px 28px;
+      margin: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+      background-color: #004080;
+      border: 2px solid #004080;
+      border-radius: 8px;
+      cursor: pointer;
       transition: all 0.3s ease;
     }
-    
-    .download-btn:hover {
-      background-color: #ffd700;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(250, 204, 21, 0.4);
+    .tab-btn:hover {
+      background-color: #1035AC;
     }
-    
-    .cv-preview {
-      background-color: #0f172a;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 20px 0;
+    .tab-btn.active {
+      background-color: #facc15;
+      color: #0f172a;
+      border-color: #facc15;
     }
-    
-    .cv-preview img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #334155;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    h2 { margin-bottom: 10px; color: #facc15; }
   </style>
 </head>
 <body>
-
-<h1>📄 Power BI Developer Resume</h1>
-<div style="text-align: center; background-color: #1e293b; padding: 20px; border-radius: 8px; max-width: 800px; margin: 20px auto; border: 2px solid #facc15;">
-  <p style="color: #facc15; font-size: 1.3rem; font-weight: bold; margin: 0 0 10px 0;">
-    ✨ Two Specialized Versions Available
-  </p>
-  <p style="color: #f1f5f9; margin: 0; line-height: 1.6;">
-    <strong>General Industries CV</strong> - For consulting, enterprise BI, and multi-industry roles<br>
-    <strong>Healthcare CV</strong> - For healthcare providers, payers, and health IT companies
-  </p>
-</div>
-
-<div class="buttons">
-  <a href="index.html">🏠 Home</a>
-  <a href="resume.html">📄 Resume</a>
-  <a href="coverletter.html">📬 Cover Letter</a>
-  <a href="projects.html">💼 Power BI Projects</a>
-  <a href="published.html">📚 Published Research</a>
-  <a href="contact.html">📧 Contact Me</a>
-  <a href="linkedin.html">🔗 LinkedIn</a>
-</div>
-
-<!-- Non-Healthcare CV -->
-<div class="cv-section">
-  <h2>Power BI Developer CV - General Industries</h2>
-  <p>
-    Optimized for consulting roles, enterprise BI positions, multi-tool environments, and federal contractors. 
-    Emphasizes Power BI technical expertise, semantic layer architecture, multi-industry consulting experience, 
-    and advanced DAX optimization across diverse sectors.
-  </p>
-  <div style="text-align: center;">
-    <a href="Todd_Nitkin_PowerBI_CV.pdf" class="download-btn" download>
-      📥 Download General Industries CV (PDF)
-    </a>
+  <h2>Resume</h2>
+  <div class="tab-buttons">
+    <span class="tab-btn active" onclick="showTab('general')">General Power BI</span>
+    <span class="tab-btn" onclick="showTab('healthcare')">Healthcare Power BI</span>
   </div>
-  
-  <div class="cv-preview">
-    <img src="cv1.png" alt="CV Page 1">
-    <img src="cv2.png" alt="CV Page 2">
-    <img src="cv3.png" alt="CV Page 3">
-  </div>
-</div>
 
-<!-- Healthcare CV -->
-<div class="cv-section">
-  <h2>Power BI Developer CV - Healthcare Focus</h2>
-  <p>
-    Specialized for healthcare providers, payers, health IT companies, and population health organizations. 
-    Emphasizes healthcare domain expertise, HIPAA-compliant solutions, EMR/EHR integration, clinical quality measures, 
-    revenue cycle analytics, and population health analytics with deep understanding of healthcare workflows.
-  </p>
-  <div style="text-align: center;">
-    <a href="Todd_Nitkin_PowerBI_CV_Healthcare.pdf" class="download-btn" download>
-      📥 Download Healthcare CV (PDF)
-    </a>
+  <div id="general" class="tab-content active">
+    <div class="image-container">
+      <img src="resume_page_1.png" alt="Resume Page 1">
+      <img src="resume_page_2.png" alt="Resume Page 2">
+      <img src="resume_page_3.png" alt="Resume Page 3">
+      <img src="resume_page_4.png" alt="Resume Page 4">
+      <img src="resume_page_5.png" alt="Resume Page 5">
+    </div>
   </div>
-  
-  <div class="cv-preview">
-    <img src="cv1.png" alt="Healthcare CV Page 1">
-    <img src="cv2.png" alt="Healthcare CV Page 2">
-    <img src="cv3.png" alt="Healthcare CV Page 3">
+
+  <div id="healthcare" class="tab-content">
+    <div class="image-container">
+      <img src="resume_hc_page_1.png" alt="HC Resume Page 1">
+      <img src="resume_hc_page_3.png" alt="HC Resume Page 3">
+      <img src="resume_hc_page_4.png" alt="HC Resume Page 4">
+      <img src="resume_hc_page_5.png" alt="HC Resume Page 5">
+      <img src="resume_hc_page_6.png" alt="HC Resume Page 6">
+      <img src="resume_hc_page_7.png" alt="HC Resume Page 7">
+    </div>
   </div>
-</div>
 
-<div style="text-align: center; margin: 40px 0; color: #94a3b8;">
-  <p><strong>Note:</strong> Both versions showcase 11+ years of Power BI expertise and Microsoft PL-300 certification.</p>
-  <p>For a customized version tailored to a specific opportunity, please <a href="contact.html" style="color: #facc15;">contact me</a>.</p>
-</div>
+  <div class="nav-buttons">
+    <a href="#top" class="button">Back to Top</a>
+    <a href="index.html" class="button">Back to Home</a>
+  </div>
 
+  <script>
+    function showTab(tab) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tab).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
